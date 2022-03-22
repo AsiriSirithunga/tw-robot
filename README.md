@@ -25,7 +25,8 @@ rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
 ```
 For and example you can install gmapping package by executing the command below.
 
-```sudo apt-get install ros-kinetic-gmapping
+```
+sudo apt-get install ros-kinetic-gmapping
 ```
 
 # Build and source the workspace
@@ -37,11 +38,13 @@ source devel/setup.bash
 ```
 # Start gazebo and rviz
 Launch rviz.
-```roslaunch tw-robot twrobot_base_rviz.launch
+```
+roslaunch tw-robot twrobot_base_rviz.launch
 ```
 You can visualize the robot model and the environment in gazebo. First, terminate the rviz. Then execute the command below.
 
-```roslaunch tw-robot twrobot_base_rviz_gazebo.launch
+```
+roslaunch tw-robot twrobot_base_rviz_gazebo.launch
 ```
 
 # Teleop demo
