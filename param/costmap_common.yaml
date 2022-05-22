@@ -1,0 +1,12 @@
+obstacle_range: 3.0
+raytrace_range: 3.5
+
+footprint: [[-0.16, -0.16], [-0.16, 0.16], [0.16, 0.16], [0.16, -0.16]]
+#robot_radius: 0.16
+
+inflation_radius: 1.0
+cost_scaling_factor: 3.0
+
+map_type: costmap
+observation_sources: scan_mrged
+scan_mrged: {sensor_frame: camera_link, data_type: LaserScan, topic: scan_mrged, marking: true, clearing: true}
