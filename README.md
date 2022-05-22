@@ -74,4 +74,19 @@ Then add the below node into the rviz gazebo launch file.
     <param name="frame_id" value="/odom" />
 </node>
 ```
-Great work! 
+# Amcl demo
+This package is for localizing the robot model in the saved map. To launch it. Execute the commands below in a new terminal after succesful launching of rviz and gazebo with the saved map.
+
+```
+source devel/setup.bash
+roslaunch tw-robot amcl.launch
+```
+# Move Base demo
+Using this package you can autonomously navigate the robot to a 2d navigation goal while avoiding obstacles in the environment. The package needs the mapserver run. It will publish velocity commands to the cmd_vel topic. The parameters must tune with respect to the application in advance to better performance. Execute the commands below in a new terminal after succesful launching of rviz and gazebo with the saved map.
+
+```
+source devel/setup.bash
+roslaunch tw-robot move_base.launch
+```
+
+Great work! Now you can use different packages upon this to learn more. 
